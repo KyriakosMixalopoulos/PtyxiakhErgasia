@@ -73,6 +73,28 @@ for run in range(1,5):#Θα τρέξουμε τις αλγοριθμικές δ�
     print("Για power demand",pd,"mWatts έχουμε")
     print("FC=",Fcost)
     print("EC=",Ecost)
+    print (u,U)         
+    
+
+    def SelectionSort(u,U):
+        for i in range(5,0,-1):
+            first=0;
+            for i in range(1,i):
+                if u[j] > u[first]:
+                    first=j
+
+        temp2=U[first]
+        temp=u[first]
+        u[first]=u[i]
+        U[first]=U[i]
+        U[i]=temp2
+        u[i]=temp
+        return u,U
+
+    SelectionSort(u,U)
+   
+    
+
         
         
        
